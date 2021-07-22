@@ -2,7 +2,7 @@ bl_info = {
     "name": "ASCII Knots",
     "description": "Import ASCII art .knt files.",
     "author": "Shankar Sivarajan",
-    "version": (0, 0, 4),
+    "version": (0, 0, 5),
     "blender": (2, 93, 0),
     "location": "File > Import-Export",
     "category": "Import-Export"
@@ -316,9 +316,9 @@ class ImportKnot(bpy.types.Operator, ImportHelper):
   
     filename_ext = ".knt", ".txt";
   
-    filepath = bpy.props.StringProperty(subtype="FILE_PATH")
+    filepath: bpy.props.StringProperty(subtype="FILE_PATH")
   
-    filter_glob = bpy.props.StringProperty(
+    filter_glob: bpy.props.StringProperty(
         default="*.knt",
         options={"HIDDEN"},
     )
