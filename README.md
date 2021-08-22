@@ -3,7 +3,7 @@
 Blender addon for importing knots from ASCII art descriptions in [John H. Williamson's "knotation"](https://johnhw.github.io/blender_knots/index.md.html).
 
 ## What's included
-* `knot_plugin_293.py`
+* `knot_plugin.py`
 * A few example .knt files.
 * `physics.blend` A simple example showing the use of physics to animate a knot tightening.
 
